@@ -4,6 +4,12 @@
 
 ```ts
 
+// @public
+export function createSubtypeHelper<T>(): <X extends T>(value: X) => X;
+
+// @public
+export function createTypeHelper<T>(): (value: T) => T;
+
 // (No @packageDocumentation comment for this package)
 
 ```
